@@ -15,6 +15,7 @@ function parseVisitor(code, visitor, onComplete) {
         'doExpressions',
         'exportDefaultFrom',
         'exportExtensions',
+        'nullishCoalescingOperator',
         'flow',
         'functionSent',
         'functionBind',
