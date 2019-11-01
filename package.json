@@ -6,7 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "keywords": [],
   "author": "George Pittarelli <g@gjp.cc>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/parser": "^7.6.4",
+    "@babel/traverse": "^7.6.3"
+  }
 }
