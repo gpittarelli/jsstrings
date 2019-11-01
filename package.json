@@ -7,7 +7,7 @@
     "jsstrings": "jsstrings"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
   "engines": {
     "node": ">=6.0.0"
@@ -18,5 +18,8 @@
   "dependencies": {
     "@babel/parser": "^7.6.4",
     "@babel/traverse": "^7.6.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0"
   }
 }

@@ -28,9 +28,9 @@ function parseVisitor(code, visitor, onComplete) {
 
   traverse(code, {
     enter: function(path) {
-      var node = path.node;
+      const node = path.node;
 
-      if (path.isStringLiteral()) {
+      if (path.isStringLiteral() || path.isDirectiveLiteral()) {
         visitor(node.value);
       } else if (path.isTemplateLiteral()) {
         for (const q of node.quasis) {
@@ -39,7 +39,6 @@ function parseVisitor(code, visitor, onComplete) {
       }
     }
   });
-  (' yooooo ');
 }
 
 function parse(code) {
